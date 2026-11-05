@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-cairo: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    --font-luxury: 'Cinzel', serif;
+  }
+
+  html {
+    font-family: var(--font-cairo);
+    scroll-behavior: smooth;
+  }
+
+  html[dir="ltr"] {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom luxury gold gradients & sheen */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDF0CD 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gold {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2D9C8 50%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #E6CA65 0%, #D4AF37 50%, #996515 100%);
+}
+
+.bg-gold-glow {
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0) 70%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+/* Subtle glassmorphism */
+.glass-panel {
+  background: rgba(18, 18, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Tabular figures for all telemetry and prices */
+.num-tabular {
+  font-variant-numeric: tabular-nums;
+}

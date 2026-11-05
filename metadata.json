@@ -1,0 +1,6 @@
+{
+  "name": "Special MarK | مؤسسة العلامة المميزة للحلول التقنية والتصميم",
+  "description": "الموقع الرسمي لمؤسسة العلامة المميزة Special MarK - رواد تطوير البرمجيات، الهويات البصرية الفاخرة، تطبيقات الجوال، التسويق الرقمي والأمن السيبراني في عمان، الأردن.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
