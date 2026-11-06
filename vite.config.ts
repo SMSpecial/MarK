@@ -4,10 +4,10 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(({ mode }) => {
-  // Configured specifically for GitHub Pages repository deployment (https://github.com/SMSpecial/MarK)
-  // Automatically uses '/MarK/' in production build, and '/' in local development/preview.
-  // Can also be customized via VITE_BASE_PATH environment variable.
-  const base = process.env.VITE_BASE_PATH || (mode === 'production' ? '/MarK/' : '/');
+  // Configured to support both Cloud Run root hosting ('/') and GitHub Pages subpath ('/MarK/')
+  // When building for GitHub Pages, 'npm run build:gh-pages' passes '--base=/MarK/'.
+  // Standard 'npm run build' for Cloud Run / production uses VITE_BASE_PATH or defaults to '/'.
+  const base = process.env.VITE_BASE_PATH || '/';
 
   return {
     base,
