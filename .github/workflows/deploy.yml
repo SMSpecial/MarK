@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Special MarK to GitHub Pages
 
 on:
   push:
@@ -38,7 +38,9 @@ jobs:
 
       - name: Build Production Assets
         run: npm run build
-
+        env:
+          VITE_BASE_PATH: '/MarK/'
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
