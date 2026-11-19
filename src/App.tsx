@@ -12,7 +12,7 @@ import { Footer } from './components/Footer';
 import { ConsultationBookingModal } from './components/ConsultationBookingModal';
 
 export default function App() {
-  const [lang, setLang] = useState<Language>('ar');
+  const [lang, setLang] = useState<Language>('en');
   const [isDark, setIsDark] = useState<boolean>(true);
   const [isBookingOpen, setIsBookingOpen] = useState<boolean>(false);
   const [prefillBookingNote, setPrefillBookingNote] = useState<string>('');
