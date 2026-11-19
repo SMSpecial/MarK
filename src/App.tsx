@@ -32,7 +32,7 @@ export default function App() {
   }, [isDark]);
 
   const handleToggleLang = () => {
-    setLang(prev => (prev === 'ar' ? 'en' : 'ar'));
+    setLang(prev => (prev === 'ar' ? 'en' : 'en'));
   };
 
   const handleToggleTheme = () => {
