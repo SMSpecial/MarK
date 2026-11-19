@@ -39,7 +39,7 @@ jobs:
       - name: Build Production Assets
         run: npm run build
         env:
-          VITE_BASE_PATH: '/MarK/'
+          VITE_BASE_PATH: '/SM/'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
